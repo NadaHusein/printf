@@ -17,7 +17,7 @@ char *convert(long int num, int base, int flags, params_t *params)
   (void) params;
   if (!(flags & CONVERT_UNSIGNED ) && num < 0)
     {
-      n = num;
+      n = -num;
       sign = '-';
 
     }
